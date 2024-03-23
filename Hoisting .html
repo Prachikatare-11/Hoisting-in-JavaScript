@@ -1,0 +1,65 @@
+<!-- Hoisting in JavaScript 🔥(variables & functions) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Hosting.js"></script>
+    <script>
+        
+//    logic Hosting 
+
+// var x=7;
+// function getname(){
+//     console.log("it is hosting")
+// }
+
+// getname()
+// console.log(x)
+
+// output
+// it is hosting
+//  7
+
+
+// =============================================
+// getname()
+// console.log(x)
+// var x=7;
+// function getname(){
+//     console.log("it is hosting")
+// }
+
+// output
+// it is hosting
+//  undefined
+
+// ======================================================
+
+// var x=7;
+// function getname(){
+//     console.log("it is hosting")
+// }
+
+// console.log(getname)
+// output
+// ƒ getname(){
+//     console.log("it is hosting")
+// 
+
+getname()
+console.log(x)
+var x=7;
+
+functiongetname =()=>{
+console.log("Its hosting")
+}
+
+// output
+// Hosting.js:42 Uncaught ReferenceError: getname is not defined
+    </script>
+</body>
+</html>
